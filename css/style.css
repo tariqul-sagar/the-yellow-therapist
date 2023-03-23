@@ -1,0 +1,135 @@
+main {
+    margin-top: 10em;
+    margin-bottom: 20em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.option-buttons, .option-buttons-inside {
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.outside-appointment-button1, .outside-appointment-button2 {
+    display: inline-block;
+    margin: 1em;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 120%;
+    transition: 0.5s;
+}
+
+.outside-appointment-button1, 
+.outside-appointment-button2:hover{
+    border: 2px solid #ffc000;
+    color: #ffc000;
+    background-color: transparent;
+}
+
+.outside-appointment-button1:hover, 
+.outside-appointment-button2 {
+    border: 2px solid transparent;
+    color: white;
+    background-color: #ffc000;
+}
+
+
+
+
+.inside-appointment-button {
+    display: inline-block;
+    margin: 1em;
+    padding: 1em 2em;
+    cursor: pointer;
+    border: 2px solid #ffc000;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 120%;
+    color: #ffc000;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.inside-appointment-button:hover {
+    padding: 1em 4em;
+}
+
+.who {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.who > div {
+    margin: 1em;
+}
+.who > div > h1 {
+    color: #ffc000;
+}
+
+.main-div {
+    padding-top: 1em; 
+    padding-bottom: 1em;
+    margin-bottom: 2em; 
+    margin-top: 2em;
+}
+
+.who > div > p {
+    color: #5f6368;
+}
+
+.big {
+    display: block;
+}
+
+.small {
+    display: none;
+}
+
+
+
+@media only screen and (max-width:1368px) {
+    html, body {
+        font-size: 80%; 
+    }
+    .option-buttons > button {
+        padding: 1em 1em;
+        margin: 0.5em;
+    }
+
+    main {
+        width: 90%;
+    }
+
+   
+
+
+}
+
+@media only screen and (max-width:640px) {
+    .who {
+        grid-template-columns: 1fr;
+    }
+    .big {
+        display: none;
+    }
+    
+    .small {
+        display: block;
+    }
+}
+
+
+
